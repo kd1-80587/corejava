@@ -1,0 +1,36 @@
+package payroll;
+
+import java.util.Scanner;
+
+public class HourlyEmployee extends Employee {
+	private double Wage;
+	private double hour;
+
+	public HourlyEmployee() {
+		super();
+	}
+
+	public HourlyEmployee(String firstName, String lastName, String socialSecurityNUmber) {
+		super(firstName, lastName, socialSecurityNUmber);
+	}
+
+	@Override
+	public void accept(Scanner sc) {
+		System.out.print("enter the employee hourly wage");
+		Wage = sc.nextDouble();
+
+		super.accept(sc);
+	}
+
+	@Override
+	public void calculateSalary() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String toString() {
+		return "HourlyEmployee [toString()=" + super.toString() + "]";
+	}
+
+}

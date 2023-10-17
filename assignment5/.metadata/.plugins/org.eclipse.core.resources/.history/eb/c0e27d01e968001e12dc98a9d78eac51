@@ -1,0 +1,32 @@
+package payroll;
+
+import java.util.Scanner;
+
+public class SalariedEmployee extends Employee {
+
+	private double weeklySalary;
+
+	@Override
+	public void accept(Scanner sc) {
+		super.accept(sc);
+		System.out.println("enter the weekly salary of employee");
+
+	}
+
+	
+
+	@Override
+	public String toString() {
+		return "SalariedEmployee [weeklySalary=" + weeklySalary + ", toString()=" + super.toString() +  "]";
+	}
+
+
+
+	@Override
+	public void calculateSalary() {
+		double totalalary;
+		
+
+	}
+
+}

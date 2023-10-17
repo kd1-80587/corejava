@@ -1,0 +1,22 @@
+package payroll;
+
+import java.util.Scanner;
+
+public class Tester {
+	
+	private static final Scanner Scanner = null;
+
+	public static void main(String[] args) {
+		Employee employee=new HourlyEmployee();	
+		employee.accept(Scanner);
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+
+}

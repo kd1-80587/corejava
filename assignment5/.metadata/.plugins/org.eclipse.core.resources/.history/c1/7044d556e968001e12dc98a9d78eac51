@@ -1,0 +1,30 @@
+package payroll;
+
+import java.util.Scanner;
+
+abstract public class Employee {
+	private String firstName;
+	private String lastName;
+	private String socialSecurityNUmber;
+
+	Scanner sc = new Scanner(System.in);
+
+	public void accept() {
+
+		System.out.print("enter the first name of employee");
+		firstName=sc.next();
+		System.out.print("enter the last name of employee");
+		lastName=sc.next();
+		System.out.print("enter the first name of employee");
+		socialSecurityNUmber=sc.next();
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", socialSecurityNUmber="
+				+ socialSecurityNUmber + ", sc=" + sc + "]";
+	}
+	
+
+}

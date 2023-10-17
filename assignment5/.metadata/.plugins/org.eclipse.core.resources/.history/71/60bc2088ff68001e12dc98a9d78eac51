@@ -1,0 +1,28 @@
+package payroll;
+
+import java.util.Scanner;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+//		Employee employee=new HourlyEmployee();	
+//		System.out.println("-----------------------------------------");
+//		employee.accept(sc);
+//		System.out.println("-----------------------------------------");
+//   	System.out.println("Information="+employee.toString());
+//		System.out.println("-----------------------------------------");
+//        employee.calculateSalary();
+//        
+
+		Employee employee = new SalariedEmployee();
+		System.out.println("-----------------------------------------");
+		employee.accept(sc);
+		System.out.println("-----------------------------------------");
+		System.out.println("Information="+employee.toString());
+		System.out.println("-----------------------------------------");
+		employee.calculateSalary();
+
+	}
+
+}

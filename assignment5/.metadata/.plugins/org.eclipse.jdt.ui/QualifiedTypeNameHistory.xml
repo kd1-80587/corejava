@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="payroll.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="payroll.CommisionEmployee"/>
+    <fullyQualifiedTypeName name="payroll.HourlyEmployee"/>
+    <fullyQualifiedTypeName name="payroll.SalariedEmployee"/>
+    <fullyQualifiedTypeName name="java.lang.Void"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="payroll.BasedSalariedCommisionEmployee"/>
+</qualifiedTypeNameHistroy>

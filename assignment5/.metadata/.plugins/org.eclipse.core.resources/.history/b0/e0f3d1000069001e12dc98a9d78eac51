@@ -1,0 +1,112 @@
+package payroll;
+
+import java.util.Scanner;
+
+public class Tester {
+	public int static  menu() {
+		Scanner sc = new Scanner(System.in);
+		int choice;
+		System.out.println("1.Add salaried employee ");
+		System.out.println("2.Add hourly based employee ");
+		System.out.println("3.Add commission based employee ");
+		System.out.println("4.Add base-salried plus commision employee ");
+		System.out.println("5.Display total salary of salaried employee ");
+		System.out.println("6.Display total salary of hourly based employee ");
+		System.out.println("7.Display total salary of commission based employee ");
+		System.out.println("8.Display total salary of base-salried plus commision employee ");
+		System.out.println("10.To giv reward to salaried plus commission based employee hike 0f 10%");
+
+		choice = sc.nextInt();
+		return choice;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int index;
+		int choice;
+		Employee employee[] = new Employee[index];
+
+		switch ((choice = menu()) != 0) {
+		case 1:
+			employee[index] = new HourlyEmployee();
+			System.out.println("-----------------------------------------");
+			for (Employee arr : employee) {
+				employee[index].accept(sc);
+			}
+			System.out.println("-----------------------------------------");
+			System.out.println("Information=" + employee.toString());
+			System.out.println("-----------------------------------------");
+			employee[index].calculateSalary();
+			break;
+		case 2:
+			employee[index] = new SalariedEmployee();
+			System.out.println("-----------------------------------------");
+			for (Employee arr : employee) {
+				employee[index].accept(sc);
+			}
+			System.out.println("-----------------------------------------");
+			System.out.println("Information=" + employee.toString());
+			System.out.println("-----------------------------------------");
+			employee[index].calculateSalary();
+			break;
+		case 3:
+			employee[index] = new CommisionEmployee();
+			System.out.println("-----------------------------------------");
+			for (Employee arr : employee) {
+				employee[index].accept(sc);
+			}
+			System.out.println("-----------------------------------------");
+			System.out.println("Information=" + employee.toString());
+			System.out.println("-----------------------------------------");
+			employee[index].calculateSalary();
+			break;
+		case 4:
+			employee[index] = new BasedSalariedCommisionEmployee();
+			System.out.println("-----------------------------------------");
+			for (Employee arr : employee) {
+				employee[index].accept(sc);
+			}
+			System.out.println("-----------------------------------------");
+			System.out.println("Information=" + employee.toString());
+			System.out.println("-----------------------------------------");
+			employee[index].calculateSalary();
+			break;
+		case 5:
+			employee[index] = new SalariedEmployee();
+			System.out.println("-----------------------------------------");
+			for (Employee arr : employee)
+			System.out.println("Information=" + employee[index].toString());
+			employee[index].calculateSalary();
+			System.out.println("-----------------------------------------");
+			
+			break;
+		case 6:
+			employee[index] = new HourlyEmployee();
+			System.out.println("-----------------------------------------");
+			for (Employee arr : employee)
+			System.out.println("Information=" + employee[index].toString());
+			employee[index].calculateSalary();
+			System.out.println("-----------------------------------------");
+			break;
+		case 7:
+			employee[index] = new CommisionEmployee();
+			System.out.println("-----------------------------------------");
+			for (Employee arr : employee)
+			System.out.println("Information=" + employee[index].toString());
+			employee[index].calculateSalary();
+			System.out.println("-----------------------------------------");
+			break;
+		case 8:
+			employee[index] = new BasedSalariedCommisionEmployee();
+			System.out.println("-----------------------------------------");
+			for (Employee arr : employee)
+			System.out.println("Information=" + employee[index].toString());
+			employee[index].calculateSalary();
+			System.out.println("-----------------------------------------");
+			
+			break;
+		}
+
+	}
+
+}
