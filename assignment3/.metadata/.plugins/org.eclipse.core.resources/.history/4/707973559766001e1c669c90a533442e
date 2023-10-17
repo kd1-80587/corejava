@@ -1,0 +1,15 @@
+package que1;
+
+public class Customers {
+	private int accountNumber;
+	private int beginnigBalance;
+	private int charges;
+	private int credit;
+	private int newBalance;
+	
+	
+	
+	
+	
+
+}

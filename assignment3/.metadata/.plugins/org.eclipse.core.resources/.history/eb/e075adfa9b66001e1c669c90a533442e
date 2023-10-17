@@ -1,0 +1,13 @@
+package que1;
+
+public class Test {
+
+	public static void main(String[] args) {
+	   CreditLimit lm=new CreditLimit();
+	   
+	   lm.accept();
+       lm.dispaly();
+       lm.newBalance();
+	}
+
+}

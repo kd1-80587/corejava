@@ -1,0 +1,17 @@
+package tester;
+
+import java.util.Scanner;
+
+public class TestPointArray1 {
+	public static void main(String[] args) {
+    double x;
+    double y;
+    
+    Scanner sc=new Scanner();
+    Point2D p1=new Point2D();
+    
+    
+    
+	}
+
+}

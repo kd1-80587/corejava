@@ -1,0 +1,78 @@
+package que1;
+
+import java.util.Scanner;
+
+public class CreditLimit {
+	private int accountNumber;
+	private int beginnigBalance;
+	private int charges;
+	private int credit;
+	private int newBalance;
+	
+	Scanner sc=new Scanner(System.in);
+	
+	public CreditLimit(int accountNumber, int beginnigBalance, int charges, int credit, int newBalance) {
+		this.accountNumber = accountNumber;
+		this.beginnigBalance = beginnigBalance;
+		this.charges = charges;
+		this.credit = credit;
+		this.newBalance = newBalance;
+	}
+
+
+	public CreditLimit() {
+		this.accountNumber = 0;
+		this.beginnigBalance = 0;
+		this.charges = 0;
+		this.credit = 0;
+		this.newBalance = 0;
+	}
+
+
+	void accept() 
+	{
+	  System.out.println("enter the account number=");
+	 this.accountNumber=sc.nextInt();
+
+	  System.out.println("enter the begining balance=");
+	  this.beginnigBalance=sc.nextInt();
+
+	  System.out.println("enter the charges=");
+	  this.charges=sc.nextInt();
+	  
+	  System.out.println("enter the credit limt=");
+	  this.credit=sc.nextInt();
+	}
+	public void newBalance() 
+	{
+		int newBalance=this.beginnigBalance+this.charges-this.credit;
+		if(newBalance<=00)
+			System.out.println("Credit Limit Exceed");
+		else
+         System.out.println("new balance ="+newBalance);
+	}
+	void dispaly()
+	{
+	 	
+		System.out.println("enter the account number=+accountNumber");
+		System.out.println("enter the beginnigBalance ="+beginnigBalance);
+		System.out.println("enter the charges ="+charges);
+		System.out.println("enter the credit ="+credit);
+		
+	}
+
+
+	public int getCredit() {
+		return credit;
+	}
+
+}
+	
+
+	
+	
+	
+	
+	
+
+
