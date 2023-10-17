@@ -1,0 +1,24 @@
+package com.app.fruits;
+
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args)
+	{
+		int choice;
+		Scanner sc=new Scanner(ystem.in);
+		do {
+			System.out.println("enter your choice");
+			System.out.println("enter your choice");
+			System.out.println("enter your choice");
+			System.out.println("enter your choice");
+			System.out.println("enter your choice");
+			System.out.println("enter your choice");
+			System.out.println("enter your choice");
+			System.out.println("enter your choice");
+		}
+		
+	}
+	
+
+}

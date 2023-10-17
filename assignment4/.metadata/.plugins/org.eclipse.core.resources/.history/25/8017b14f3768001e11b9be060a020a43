@@ -1,0 +1,48 @@
+package com.app.fruits;
+
+import java.util.Scanner;
+
+public class Fruit {
+	private String color;
+	private double weight;
+	private String name;
+	private boolean isFresh;
+	
+	Scanner sc=new Scanner(System.in);
+   public Fruit() {
+		
+	}
+	
+	public Fruit(String color, double weight, String name) {
+		this.color = color;
+		this.weight = weight;
+		this.name = name;
+	}
+   	public void accept()
+    {
+    	System.out.println("enter the color of fruit=");
+    	color=sc.next();
+    	System.out.println("enter the weight of fruit=");
+    	weight=sc.nextInt();
+    	System.out.println("enter the name of fruit=");
+    	name=sc.next();
+    
+    }
+    public void display()
+    {
+      System.out.println("colour="+color);	
+      System.out.println("colour="+weight);	
+      System.out.println("colour="+name);	
+    }
+    
+
+
+	@Override
+	public String toString() {
+		return "Fruit [color=" + color + ", weight=" + weight + ", name=" + name + ", isFresh=" + isFresh + "]";
+	}
+	
+	
+	
+
+}
