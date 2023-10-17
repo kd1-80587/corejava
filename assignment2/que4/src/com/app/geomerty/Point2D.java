@@ -1,0 +1,39 @@
+package com.app.geomerty;
+
+import java.util.Scanner;
+
+public class Point2D {
+	double x_cord;
+	double y_cord;
+	
+	
+	public Point2D(double x_cord, double y_cord)
+	{
+		this.x_cord = x_cord;
+		this.y_cord = y_cord;
+	}
+
+	
+	public String getDetails() 
+	{
+	   String a;
+       a="x cordinate"+x_cord+"y cordinate"+y_cord;
+	   return a;	
+	}
+	
+	public boolean isEqual(Point2D s)
+	{
+	  return this.x_cord==s.x_cord && this.y_cord==s.y_cord;
+	}
+	public double calculateDistance(Point2D s) 
+	{
+		double x=this.x_cord-s.x_cord;
+		double y=this.y_cord-s.y_cord;
+		return  Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+		
+	}
+	
+	
+	
+
+}

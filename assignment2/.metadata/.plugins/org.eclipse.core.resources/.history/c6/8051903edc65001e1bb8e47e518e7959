@@ -1,0 +1,15 @@
+package que2;
+
+public class test {
+	public static void main(String[] args) {
+	Employee e1=new Employee();
+	e1.accept();
+	e1.display();
+	System.out.println("yearly salary of employee="+e1.calculateYearlySalary());
+	Employee e2=new Employee();
+	e2.accept();
+	e2.display();
+	System.out.println("yearly salary of employee="+e2.calculateYearlySalary());
+	}
+
+}

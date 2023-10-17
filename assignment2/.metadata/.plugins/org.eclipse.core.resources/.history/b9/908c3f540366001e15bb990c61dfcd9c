@@ -1,0 +1,42 @@
+package com.app.geomerty;
+
+import java.util.Scanner;
+
+public class Point2D {
+	int x_cord;
+	int y_cord;
+	
+	Scanner sc=new Scanner(System.in);
+	
+	public Point2D(int x_cord, int y_cord)
+	{
+		this.x_cord = x_cord;
+		this.y_cord = y_cord;
+	}
+
+	public Point2D()
+	{
+		this.x_cord = 0;
+		this.y_cord = 0;
+	}
+	void accept()
+	{
+	  	System.out.println("ENTER THE X COORDINATE=");
+	  	x_cord=sc.nextInt();
+	  	System.out.println("ENTER THE Y COORDINATE=");
+	  	y_cord=sc.nextInt();
+	  	
+	}
+	public String getDetails() 
+	{
+		return System.out.println("x cordinate"+x_cord+"y cordinate"+y_cord);
+	}
+	
+	boolean isEqual()
+	{
+	   if() 	
+	}
+	
+	
+
+}

@@ -1,0 +1,13 @@
+package tester;
+
+public class Invoice {
+	String partno;
+	String partDesc;
+	int  quantity;
+	double pricePerItem;
+	 
+	
+	
+	
+
+}

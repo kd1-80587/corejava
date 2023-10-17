@@ -1,0 +1,17 @@
+package que2;
+
+public class test {
+	public static void main(String[] args) {
+	System.out.println("information of employee 1.........");
+	Employee e1=new Employee();
+	e1.accept();
+	e1.display();
+	System.out.println("yearly salary of employee="+e1.calculateYearlySalary());
+	System.out.println("information of employee 2.........");
+	Employee e2=new Employee();
+	e2.accept();
+	e2.display();
+	System.out.println("yearly salary of employee="+e2.calculateYearlySalary());
+	}
+
+}

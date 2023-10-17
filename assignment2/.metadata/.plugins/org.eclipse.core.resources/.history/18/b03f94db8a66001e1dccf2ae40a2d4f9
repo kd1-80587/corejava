@@ -1,0 +1,23 @@
+package tester;
+package com.app.geomerty;
+import java.util.Scanner;
+
+
+public class TestPoint {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		double x;
+		double y;
+		
+		  	System.out.println("ENTER THE X COORDINATE=");
+		  	x=sc.nextInt();
+		  	System.out.println("ENTER THE Y COORDINATE=");
+		  	y=sc.nextInt();
+		  	Point2D p1=new Point2D(x,y);
+		  	
+		
+
+	}
+
+}

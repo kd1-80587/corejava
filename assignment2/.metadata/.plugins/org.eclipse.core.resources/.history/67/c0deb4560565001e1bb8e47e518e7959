@@ -1,0 +1,32 @@
+package tester;
+
+public class Invoice {
+	String partno;
+	String partDesc;
+	int  quantity;
+	double pricePerItem;
+	
+	
+	public Invoice()
+	{
+		this.partno = "";
+		this.partDesc ="";
+		this.quantity = 0;
+		this.pricePerItem =0;
+	
+	}
+	public Invoice(String partno, String partDesc, int quantity, double pricePerItem) 
+	{
+		this.partno = partno;
+		this.partDesc = partDesc;
+		this.quantity = quantity;
+		this.pricePerItem = pricePerItem;
+	}
+	
+	
+	 
+	
+	
+	
+
+}

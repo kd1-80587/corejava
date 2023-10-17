@@ -1,0 +1,25 @@
+package que2;
+
+public class test {
+	public static void main(String[] args) {
+		System.out.println("enter information of employee 2.........");
+	Employee e1=new Employee();
+	e1.accept();
+	System.out.println("information of employee 1.........");
+	e1.display();
+	System.out.println("yearly salary of employee="+e1.calculateYearlySalary());
+	System.out.println("yearly salary  after 10% raise ="+e1.calculateRaise());
+
+	
+	
+	System.out.println(" enter information of employee 2.........");
+	Employee e2=new Employee();
+	e2.accept();
+	System.out.println("information of employee 2.........");
+	e2.display();
+	System.out.println("yearly salary of employee="+e2.calculateYearlySalary());
+	System.out.println("yearly salary after 10% raise ="+e2.calculateRaise());
+
+	}
+
+}

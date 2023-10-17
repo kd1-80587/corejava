@@ -1,0 +1,85 @@
+package tester;
+
+import java.util.Scanner;
+
+public class Invoice {
+	String partno;
+	String partDesc;
+	int  quantity;
+	double pricePerItem;
+	
+	Scanner sc=new Scanner(System.in);
+	
+	
+	public Invoice()
+	{
+		this.partno = "";
+		this.partDesc ="";
+		this.quantity = 0;
+		this.pricePerItem =0;
+	
+	}
+	public Invoice(String partno, String partDesc, int quantity, double pricePerItem) 
+	{
+		this.partno = partno;
+		this.partDesc = partDesc;
+		this.quantity = quantity;
+		this.pricePerItem = pricePerItem;
+	}
+	public String getPartno() {
+		return partno;
+	}
+	public void setPartno(String partno) {
+		this.partno = partno;
+	}
+	public String getPartDesc() {
+		return partDesc;
+	}
+	public void setPartDesc(String partDesc) {
+		this.partDesc = partDesc;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	public double getPricePerItem() {
+		return pricePerItem;
+	}
+	public void setPricePerItem(double pricePerItem) {
+		this.pricePerItem = pricePerItem;
+	}
+	
+	void accept()
+	{
+	   System.out.print("enter the partno=");
+	   partno=sc.next();
+       System.out.print("enter the partdesc=");
+       partDesc=sc.next();
+	   System.out.print("enter the quantity=");
+	   quantity=sc.nextInt();
+	   if(quantity>0) {
+       System.out.print("enter the pricePerItem=");
+       pricePerItem=sc.nextInt();
+       if(pricePerItem>0) {
+       }else
+    	   System.o
+	   } 
+	 }
+	void display()
+	{
+	   System.out.println(" partno="+partno);
+       System.out.println(" part description="+partDesc);
+	   System.out.println(" quantity="+quantity);
+       System.out.println(" pricePerItem="+pricePerItem);
+      
+	}
+	void calculateBill()
+	{
+	   double total;
+	   total=quantity* pricePerItem ;
+	   System.out.println("total bill ="+total);
+	}
+	
+}
