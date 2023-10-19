@@ -1,0 +1,17 @@
+package program01que1;
+
+public class Demo01GenericMethod {
+
+	static <T extends Number> void findMin(T[] arr) {
+		T min;
+		for (int i = 0; i < 5; i++) {
+         System.out.println("element :"+arr);
+		}
+	}
+
+	public static void main(String[] args) {
+		Integer[] arr1 = { 22, 55, 77, 11, 33 };
+		findMin(arr1);
+	}
+
+}
